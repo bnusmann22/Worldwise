@@ -1,14 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Notfound from './pages/Notfound';
-import Home from './pages/Home';
+import Homepage from './pages/Homepage';
 import Pricing from './pages/Pricing';
+import Product from './pages/Product';
+import Login from './pages/Login';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="Pricing" element={<Pricing />} />
+        <Route path="Product" element={<Product />} />
+        <Route path="Login" element={<Login />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>

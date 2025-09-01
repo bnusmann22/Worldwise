@@ -1,8 +1,12 @@
 import React from 'react'
+import PageNav from '../component/PageNav'
 
 function NotFound() {
    return (
-    <div>NotFound</div>
+    <div>
+      <PageNav/>
+      NotFound 
+    </div>
   )
 }
 
