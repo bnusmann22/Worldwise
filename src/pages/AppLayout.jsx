@@ -1,12 +1,13 @@
-import React from 'react'
-import Map from "../component/Map";
-import <Sidebar></Sidebar> from "../component/<Sidebar></Sidebar>";
+
+import Sidebar from "../component/Sidebar";
+import Map   from "../component/Map";
+import styles from './AppLayout.module.css';
 
 function AppLayout() {
   return (
-    <div>
+    <div className={styles.app}>
       <Sidebar />
-      <Map />
+      <Map /> 
     </div>
   )
 }
